@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         primary: "#0B224E",
         dropdown: "#173578",
+        buttonBg: "#549DC7",
       }
     },
   },
