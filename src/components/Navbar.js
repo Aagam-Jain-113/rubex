@@ -17,7 +17,16 @@ function Navbar() {
             {isOpen ?
                 <div className={'space-y-5 transform duration-300 lg:space-x-10 text-sm text-center items-center justify-center flex flex-col lg:flex-row w-full overflow-hidden lg:justify-between relative' + (isOpen ? "h-80" : 'h-10')}>
                     <a href="/">Blog</a>
-                    <a href="/">About us</a>
+                    <div className='flex items-center space-x-2' onClick={() => setActiveDropdown(!activeDropdown)}>
+                        <p>About us</p>
+                        {activeDropdown ? <BsChevronUp /> : <BsChevronDown />}
+                    </div>
+                    {activeDropdown  &&
+                        <div className='absolute top-10 transform duration-300 h-24 rounded-lg w-36 bg-dropdown p-6 text-center'>
+                            <p>About RUBEX</p>
+                            <p className='mt-3'>Contact Us</p>
+                        </div>
+                    }
                     <a href="/">Login</a>
                     <button href="/" className='border font-bold border-white w-32 rounded-xl h-10'>Sign Up</button>
                 </div>
