@@ -9,8 +9,8 @@ function Navbar() {
     const [activeDropdown, setActiveDropdown] = React.useState(false);
 
     return (
-        <nav className='flex px-10 py-4 bg-primary text-white justify-between items-center flex-wrap'>
-            <img src={Logo} alt="Logo" />
+        <nav className='flex px-10 py-2 lg:py-4 bg-primary text-white justify-between items-center flex-wrap'>
+            <img src={Logo} alt="Logo" className='h-8 lg:h-auto' />
             <div className="block cursor-pointer lg:hidden">
                 <Hamburger color="#fff" onToggle={() => setIsOpen(!isOpen)} />
             </div>
