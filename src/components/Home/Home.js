@@ -30,6 +30,7 @@ import SwiperCore, {
     Autoplay, FreeMode, Thumbs, Pagination
 } from 'swiper';
 import Plan from './Plan'
+import Navbar from '../Navbar'
 
 SwiperCore.use([FreeMode, Thumbs, Autoplay, Pagination]);
 
@@ -40,8 +41,10 @@ function Home() {
 
     return (
         <div className='overflow-x-hidden'>
-            <Hero />
-
+            <div className='hero min-h-screen'>
+                <Navbar />
+                <Hero />
+            </div>
             <div className='bg-homeBg px-10 flex relative flex-col justify-center min-h-screen'>
                 <img src={Pattern1} alt="" className='absolute w-7/12 right-0 top-0' />
                 <div className='grid items-center mt-10 lg:mt-0 grid-cols-2 gap-6'>

@@ -4,10 +4,10 @@ import heroanim from '../../assets/heroanimation.png'
 
 function Hero() {
     return (
-        <div className='hero text-center min-h-screen text-white flex-col-reverse flex lg:flex-row lg:space-x-20 items-center justify-center px-6 w-screen'>
-            <div className=''>
+        <div className='text-center min-h-screen text-white flex-col-reverse flex lg:flex-row lg:space-x-20 items-center justify-center px-6 w-screen'>
+            <div>
                 <p className='uppercase text-xl lg:text-4xl font-bold'>On-demand live class</p>
-                <p className='mt-2 lg:mt-6 lg:text-base text-xs'>Personlised live learning platform for 6th to 12th graders</p>
+                <p className='mt-2 lg:mt-6 lg:text-base text-xs'>Personalised live learning platform for 6th to 12th graders</p>
                 <button className='uppercase lg:text-xl text-xs mt-6 lg:mt-10 bg-buttonBg rounded-xl h-10 lg:h-16 w-48 lg:w-72 px-4 text-center font-bold'>Join Your Class Now </button>
             </div>
             <div className='flex mt-12 lg:mt-0 flex-col relative items-center'>

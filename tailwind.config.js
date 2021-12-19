@@ -23,6 +23,7 @@ module.exports = {
         greenCard2: "#3CA55C",
         redCard1: "#BC5049",
         redCard2: "#DD8478",
+        contact: "#65AEE0",
       },
       fontFamily: {
         "roboto": "Roboto",
