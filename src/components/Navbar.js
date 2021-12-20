@@ -21,6 +21,7 @@ function Navbar() {
             </div>
             {isOpen ?
                 <div className={'space-y-5 transform duration-300 text-sm text-center items-center justify-center flex flex-col w-full overflow-hidden relative' + (isOpen ? "h-80" : 'h-10')}>
+                    {location.pathname !== "/" && <a href="/">Home</a>}
                     <a href="/">Blog</a>
                     <div className='flex items-center cursor-pointer space-x-2' onClick={() => setActiveDropdown(!activeDropdown)}>
                         <p>About us</p>
@@ -37,6 +38,7 @@ function Navbar() {
                 </div>
                 :
                 <div className='space-x-20 hidden text-sm text-center items-center lg:flex justify-between relative'>
+                    {location.pathname !== "/" && <a href="/">Home</a>}
                     <a href="/">Blog</a>
                     <div className='flex items-center cursor-pointer space-x-2' onMouseEnter={() => setActiveDropdown(!activeDropdown)} onClick={() => setActiveDropdown(!activeDropdown)}>
                         <p>About us</p>
