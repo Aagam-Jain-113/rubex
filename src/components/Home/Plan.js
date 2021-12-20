@@ -40,7 +40,7 @@ function Plan() {
     ]
 
     return (
-        <div className="min-h-screen mt-24">
+        <div className="min-h-screen my-10 lg:mt-24">
             <div className='h-full lg:h-96 mx-auto rounded-xl shadow-cards w-10/12 p-6 lg:p-12 bg-white text-center'>
                 <p className='uppercase font-bold text-lg lg:text-4xl text-primary'>Plans</p>
                 <p className="w-full lg:w-1/2 text-sm lg:text-xl mx-auto mt-6">Our flexible approach to learning allows students to learn at their pace and clear doubts whenever they arise.</p>
@@ -52,7 +52,7 @@ function Plan() {
                 </div>
             </div>
             <div className="w-10/12 relative mx-auto text-center">
-                <div className="relative mt-10 lg:mt-0 lg:-top-24 flex lg:space-x-10 flex-col lg:flex-row space-y-5 mx-auto justify-center items-center grid-cols-3 text-white">
+                <div className="relative mt-10 lg:mt-0 lg:-top-24 flex lg:space-x-10 flex-col lg:flex-row lg:space-y-0 space-y-5 mx-auto justify-center items-center grid-cols-3 text-white">
                     <div className='col-span-3 lg:col-span-1 relative h-440 px-6 w-80 pt-10 bg-gradient-to-br from-blueCard1 to-blueCard2 rounded-2xl'>
                         <p className="font-bold text-3xl">Micro Plan</p>
                         <p className="text-2xl mt-3">₹{planPrices[index].micro}</p>

@@ -62,33 +62,6 @@ function Testimonials() {
                         </SwiperSlide>
                     )
                 })}
-                {/* <SwiperSlide className='flex flex-col items-center justify-center px-10'>
-                    <img src={Inverted} alt="" />
-                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>Real time sessions make the class interactive and reduce pressure from student and make us free to ask any doubt</p>
-                    <img src={Testimonial1} alt="Profile" className='mt-10' />
-                    <div className='mt-5 text-xs lg:text-xl'>
-                        <p>Nishu</p>
-                        <p>Class XI</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='flex flex-col items-center justify-center px-10'>
-                    <img src={Inverted} alt="" />
-                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>Experience of Live Class is enriching and keep us active during the sessions</p>
-                    <img src={Testimonial2} alt="Profile" className='mt-10' />
-                    <div className='mt-5 text-xs lg:text-xl'>
-                        <p>Niharika</p>
-                        <p>Class IX</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='flex flex-col items-center justify-center px-10'>
-                    <img src={Inverted} alt="" />
-                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>The concepts are explained in lucid way, that even complex ones seems easy</p>
-                    <img src={Testimonial1} alt="Profile" className='mt-10' />
-                    <div className='mt-5 text-xs lg:text-xl'>
-                        <p>Siddharth</p>
-                        <p>Class XI</p>
-                    </div>
-                </SwiperSlide> */}
             </Swiper>
         </div>
     )

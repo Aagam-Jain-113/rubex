@@ -19,23 +19,25 @@
 }
 
 .mySwiper{
-  height: 450px;
+  height: 460px;
 }
 
-.mySwiper .swiper-slide, .holisticSwiper .swiper-slide{
+.mySwiper .swiper-slide{
   background: rgba(255,255,255,0.6);
+  border-radius: 20px;
+  height: 420px;
+  margin: 30px 0;
+}
+
+.slider-single-content{
   border-radius: 20px;
 }
 
-.mySwiper .swiper-slide-active, .holisticSwiper .swiper-slide-active{
+.mySwiper .swiper-slide-active{
   background: #fff;
   box-shadow: 0px 4px 60px 3px rgba(0, 0, 0, 0.2);
   z-index: 99;
   margin-right: -10%;
-}
-
-.holisticSwiper{
-  height: 350px;
 }
 
 .swiper-slide-thumb-active{
