@@ -40,7 +40,7 @@ function Plan() {
     ]
 
     return (
-        <div className="min-h-screen my-12 lg:mb-40">
+        <div className="min-h-screen mt-24">
             <div className='h-full lg:h-96 mx-auto rounded-xl shadow-cards w-10/12 p-6 lg:p-12 bg-white text-center'>
                 <p className='uppercase font-bold text-lg lg:text-4xl text-primary'>Plans</p>
                 <p className="w-full lg:w-1/2 text-sm lg:text-xl mx-auto mt-6">Our flexible approach to learning allows students to learn at their pace and clear doubts whenever they arise.</p>
@@ -51,8 +51,8 @@ function Plan() {
                     <AiOutlineRight color="#549DC7" className='cursor-pointer' onClick={() => { index < (classes.length - 1) ? setIndex(index + 1) : setIndex(index) }} />
                 </div>
             </div>
-            <div className="w-3/4 relative mx-auto text-center">
-                <div className="relative lg:absolute mt-10 lg:mt-0 lg:-top-24 grid gap-20 grid-cols-3 text-white">
+            <div className="w-10/12 relative mx-auto text-center">
+                <div className="relative mt-10 lg:mt-0 lg:-top-24 flex lg:space-x-10 flex-col lg:flex-row space-y-5 mx-auto justify-center items-center grid-cols-3 text-white">
                     <div className='col-span-3 lg:col-span-1 relative h-440 px-6 w-80 pt-10 bg-gradient-to-br from-blueCard1 to-blueCard2 rounded-2xl'>
                         <p className="font-bold text-3xl">Micro Plan</p>
                         <p className="text-2xl mt-3">₹{planPrices[index].micro}</p>

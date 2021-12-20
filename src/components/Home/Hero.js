@@ -4,7 +4,7 @@ import heroanim from '../../assets/heroanimation.gif'
 
 function Hero() {
     return (
-        <div className='text-center min-h-screen text-white flex-col-reverse flex lg:flex-row lg:space-x-20 items-center justify-center px-6 w-screen'>
+        <div className='text-center min-h-screen px-6 text-white flex-col-reverse flex lg:flex-row lg:space-x-12 items-center justify-center'>
             <div>
                 <p className='uppercase text-xl lg:text-4xl font-bold'>On-demand live class</p>
                 <p className='mt-2 lg:mt-6 lg:text-base text-xs'>Personalised live learning platform for 6th to 12th graders</p>

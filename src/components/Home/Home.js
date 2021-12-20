@@ -45,10 +45,10 @@ function Home() {
                 <Navbar />
                 <Hero />
             </div>
-            <div className='bg-homeBg px-10 flex relative flex-col justify-center min-h-screen'>
+            <div className='bg-homeBg px-10 flex relative flex-col justify-center lg:min-h-screen'>
                 <img src={Pattern1} alt="" className='absolute w-7/12 right-0 top-0' />
                 <div className='grid items-center mt-10 lg:mt-0 grid-cols-2 gap-6'>
-                    <div className='col-span-2 lg:col-span-1 text-center lg:px-16'>
+                    <div className='col-span-2 lg:col-span-1 text-center lg:text-left lg:px-24'>
                         <p className='text-textPrimary font-bold text-lg lg:text-4xl'>Personal tutor for every child</p>
                         <p className='text-textSecondary mt-2 lg:mt-6 text-xs lg:text-xl'>Our algorithm understands your child, using AI assisted matchmaking every student is matched with a tutor who is able to convey topics in the way the student best perceives it.</p>
                     </div>
@@ -56,7 +56,7 @@ function Home() {
                         <Swiper style={{ '--swiper-navigation-color': '#fff', '--swiper-pagination-color': '#fff' }} autoplay={{
                             "delay": 2500,
                             "disableOnInteraction": false
-                        }} spaceBetween={10} onMouseEnter={() => Swiper.autoplay.stop()} navigation={true} thumbs={{ swiper: thumbsSwiper }} className="w-80">
+                        }} spaceBetween={10} navigation={true} thumbs={{ swiper: thumbsSwiper }} className="w-80">
                             <SwiperSlide><img src={Ability} alt="" /></SwiperSlide>
                             <SwiperSlide><img src={Personality} alt="" /></SwiperSlide>
                             <SwiperSlide><img src={Learningstyle} alt="" /></SwiperSlide>
@@ -70,12 +70,13 @@ function Home() {
                 </div>
             </div>
 
-            <div className='bg-homeBg lg:px-10 pt-10 lg:pt-0 flex relative flex-col justify-center min-h-screen'>
+            <div className='bg-homeBg lg:px-10 pt-10 lg:pt-0 flex relative flex-col justify-center lg:min-h-screen'>
                 <div className='flex flex-col-reverse text-center lg:text-inherit lg:grid items-center grid-cols-2 gap-6'>
                     <div className='col-span-2 lg:col-span-1 w-3/4 mx-auto'>
-                        <Swiper slidesPerView={1} initialSlide={1} pagination={{
-                            "clickable": true
-                        }} spaceBetween={20} centeredSlides={true} className="holisticSwiper font-roboto" breakpoints={{
+                        <Swiper slidesPerView={1} initialSlide={1} autoplay={{
+                            "delay": 2500,
+                            "disableOnInteraction": false
+                        }} pagination={{ "clickable": true }} spaceBetween={20} centeredSlides={true} className="holisticSwiper font-roboto" breakpoints={{
                             "1024": {
                                 "slidesPerView": 2,
                                 "spaceBetween": 0,
@@ -83,7 +84,7 @@ function Home() {
                             }
                         }}
                         >
-                            <SwiperSlide >
+                            <SwiperSlide>
                                 <div className='flex flex-col bg-white relative items-center justify-center rounded-xl p-10 pb-4 text-center'>
                                     <p className='font-bold'>Doubts</p>
                                     <img src={Doubts} alt="Online classes" className='mt-6 lg:w-2/3' />
@@ -117,7 +118,7 @@ function Home() {
                             </SwiperSlide>
                         </Swiper>
                     </div>
-                    <div className='col-span-2 lg:col-span-1 px-10 lg:px-16'>
+                    <div className='col-span-2 lg:col-span-1 lg:text-left px-10 lg:px-16'>
                         <p className='text-textPrimary font-bold text-lg lg:text-4xl'>Holistic learning experience</p>
                         <p className='text-textSecondary mt-2 lg:mt-6 text-xs lg:text-xl'>We have holistic approach for your child's complete learning experience, ranging from live classes to 1 on 1 live doubt sessions.</p>
                     </div>

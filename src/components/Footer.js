@@ -39,8 +39,8 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='bg-social py-4 lg:pl-12 lg:h-20 items-center lg:pr-28 flex lg:flex-row flex-col-reverse justify-between'>
-                <img src={Logo} alt="Logo" className='w-7 h-7 mt-6 lg:mt-0' />
+            <div className='bg-social py-4 lg:pl-12 lg:h-20 lg:pr-28 flex lg:flex-row flex-col-reverse justify-between'>
+                <img src={Logo} alt="Logo" className='w-10 h-10 mt-6 lg:mt-4' />
                 <div className='flex justify-between items-center text-lg space-x-10 text-white'>
                     <FaLinkedinIn />
                     <FaFacebookF />

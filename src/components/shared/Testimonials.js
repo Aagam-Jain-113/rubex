@@ -37,7 +37,7 @@ function Testimonials() {
         },
     ]
     return (
-        <div className='bg-testimonialBg text-center p-10 pt-20 min-h-screen'>
+        <div className='bg-testimonialBg text-center py-10 pt-20 min-h-screen'>
             <p className='text-lg lg:text-4xl uppercase font-bold'>OUR USERS <span className='text-love'> &#10084; </span> US</p>
             <p className='text-xs lg:text-xl mt-6'>Here's why</p>
 
