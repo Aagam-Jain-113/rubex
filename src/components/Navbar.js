@@ -28,8 +28,8 @@ function Navbar() {
                     </div>
                     {activeDropdown &&
                         <div className='absolute cursor-pointer top-10 z-20 transform duration-300 h-24 rounded-lg w-36 bg-dropdown p-6 text-center'>
-                            <p>About RUBEX</p>
-                            <p className='mt-3'>Contact Us</p>
+                            <NavLink to="/about" className='cursor-pointer'><p className='mb-2'>About RUBEX</p></NavLink>
+                            <NavLink to="/contact" className='cursor-pointer'>Contact Us</NavLink>
                         </div>
                     }
                     <a href="/">Login</a>

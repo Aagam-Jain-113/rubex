@@ -6,7 +6,7 @@ import Experienceguy from '../../assets/experienceguy.png'
 
 function Experience() {
     return (
-        <div className='px-10 mt-10 lg:mt-0 relative w-full flex flex-col items-center justify-center min-h-screen'>
+        <div className='px-10 relative w-full flex flex-col items-center justify-center min-h-screen'>
             <img src={Bluedesign} alt="hello" className='absolute w-24 lg:w-auto top-0 left-0' />
             <img src={Experienceimg} alt="" className='absolute hidden lg:block w-10/12 transform -translate-x-1/2 left-1/2 top-1/3 -translate-y-1/3' />
             <img src={Experienceguy} alt="" className='lg:hidden' />
