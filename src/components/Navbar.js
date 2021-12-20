@@ -36,7 +36,7 @@ function Navbar() {
                     <button href="/" className='border font-bold border-white w-32 rounded-xl h-10'>Sign Up</button>
                 </div>
                 :
-                <div className='space-x-20 text-sm text-center items-center flex justify-between relative'>
+                <div className='space-x-20 hidden text-sm text-center items-center lg:flex justify-between relative'>
                     <a href="/">Blog</a>
                     <div className='flex items-center cursor-pointer space-x-2' onMouseEnter={() => setActiveDropdown(!activeDropdown)} onClick={() => setActiveDropdown(!activeDropdown)}>
                         <p>About us</p>
@@ -44,7 +44,7 @@ function Navbar() {
                     </div>
                     {activeDropdown &&
                         <div className='absolute top-10 z-20 h-20 rounded-lg w-36 bg-dropdown pt-4 text-center'>
-                            <p className='cursor-pointer mb-2'>About RUBEX</p>
+                            <NavLink to="/about" className='cursor-pointer'><p className='mb-2'>About RUBEX</p></NavLink>
                             <NavLink to="/contact" className='cursor-pointer'>Contact Us</NavLink>
                         </div>
                     }

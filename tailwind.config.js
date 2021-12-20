@@ -24,6 +24,7 @@ module.exports = {
         redCard1: "#BC5049",
         redCard2: "#DD8478",
         contact: "#65AEE0",
+        aboutCard: "#E6F1FF",
       },
       fontFamily: {
         "roboto": "Roboto",
@@ -33,6 +34,9 @@ module.exports = {
       },
       height: {
         "440": "440px",
+      },
+      width: {
+        "450":"450px",
       },
       borderRadius: {
         "2xl": "20px",

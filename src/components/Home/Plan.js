@@ -40,7 +40,7 @@ function Plan() {
     ]
 
     return (
-        <div className="min-h-screen mt-12">
+        <div className="min-h-screen mt-12 lg:mb-40">
             <div className='h-full lg:h-96 mx-auto rounded-xl shadow-cards w-10/12 p-6 lg:p-12 bg-white text-center'>
                 <p className='uppercase font-bold text-lg lg:text-4xl text-primary'>Plans</p>
                 <p className="w-full lg:w-1/2 text-sm lg:text-xl mx-auto mt-6">Our flexible approach to learning allows students to learn at their pace and clear doubts whenever they arise.</p>
