@@ -1,7 +1,8 @@
 import React from 'react'
 import Inverted from '../../assets/invertedcommas.png'
-import Testimonial1 from '../../assets/testimonial1.png'
-import Testimonial2 from '../../assets/testimonial2.png'
+import Niharika from '../../assets/niharika.png'
+import Nishu from '../../assets/nishu.png'
+import Siddharth from '../../assets/siddharth.png'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -15,6 +16,26 @@ SwiperCore.use([Pagination]);
 
 function Testimonials() {
 
+    const data = [
+        {
+            content: "Real time sessions make the class interactive and reduce pressure from student and make us free to ask any doubt",
+            name: "Nishu",
+            classnum: "XI",
+            profilepic: Nishu,
+        },
+        {
+            content: "Experience of Live Class is enriching and keep us active during the sessions",
+            name: "Niharika",
+            classnum: "IX",
+            profilepic: Niharika,
+        },
+        {
+            content: "The concepts are explained in lucid way, that even complex ones seems easy",
+            name: "Siddharth",
+            classnum: "XI",
+            profilepic: Siddharth,
+        },
+    ]
     return (
         <div className='bg-testimonialBg text-center p-10 pt-20 min-h-screen'>
             <p className='text-lg lg:text-4xl uppercase font-bold'>OUR USERS <span className='text-love'> &#10084; </span> US</p>
@@ -28,60 +49,46 @@ function Testimonials() {
             }} pagination={{
                 "clickable": true
             }} className="mySwiper mt-10">
-                <SwiperSlide className='flex flex-col items-center justify-center px-10'>
+                {data.map(({ content, name, classnum, profilepic }) => {
+                    return (
+                        <SwiperSlide className='flex flex-col items-center justify-center px-10'>
+                            <img src={Inverted} alt="" className='' />
+                            <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>{content}</p>
+                            <img src={profilepic} alt="Profile" className='mt-10 rounded-full h-20' />
+                            <div className='mt-5 text-xs lg:text-xl'>
+                                <p>{name}</p>
+                                <p>Class {classnum}</p>
+                            </div>
+                        </SwiperSlide>
+                    )
+                })}
+                {/* <SwiperSlide className='flex flex-col items-center justify-center px-10'>
                     <img src={Inverted} alt="" />
-                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pulvinar eleifend vel nisi tempus tristique lorem lacus, feugiat. Neque aenean sed mattis </p>
+                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>Real time sessions make the class interactive and reduce pressure from student and make us free to ask any doubt</p>
                     <img src={Testimonial1} alt="Profile" className='mt-10' />
                     <div className='mt-5 text-xs lg:text-xl'>
-                        <p>Maria Dias</p>
+                        <p>Nishu</p>
                         <p>Class XI</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='flex flex-col items-center justify-center px-10'>
                     <img src={Inverted} alt="" />
-                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pulvinar eleifend vel nisi tempus tristique lorem lacus, feugiat. Neque aenean sed mattis </p>
+                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>Experience of Live Class is enriching and keep us active during the sessions</p>
                     <img src={Testimonial2} alt="Profile" className='mt-10' />
                     <div className='mt-5 text-xs lg:text-xl'>
-                        <p>Randy Rhiel Madsen</p>
-                        <p>Class XII</p>
+                        <p>Niharika</p>
+                        <p>Class IX</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='flex flex-col items-center justify-center px-10'>
                     <img src={Inverted} alt="" />
-                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pulvinar eleifend vel nisi tempus tristique lorem lacus, feugiat. Neque aenean sed mattis </p>
+                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>The concepts are explained in lucid way, that even complex ones seems easy</p>
                     <img src={Testimonial1} alt="Profile" className='mt-10' />
                     <div className='mt-5 text-xs lg:text-xl'>
-                        <p>Maria Dias</p>
+                        <p>Siddharth</p>
                         <p>Class XI</p>
                     </div>
-                </SwiperSlide>
-                <SwiperSlide className='flex flex-col items-center justify-center px-10'>
-                    <img src={Inverted} alt="" />
-                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pulvinar eleifend vel nisi tempus tristique lorem lacus, feugiat. Neque aenean sed mattis </p>
-                    <img src={Testimonial2} alt="Profile" className='mt-10' />
-                    <div className='mt-5 text-xs lg:text-xl'>
-                        <p>Randy Rhiel Madsen</p>
-                        <p>Class XII</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='flex flex-col items-center justify-center px-10'>
-                    <img src={Inverted} alt="" />
-                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pulvinar eleifend vel nisi tempus tristique lorem lacus, feugiat. Neque aenean sed mattis </p>
-                    <img src={Testimonial1} alt="Profile" className='mt-10' />
-                    <div className='mt-5 text-xs lg:text-xl'>
-                        <p>Maria Dias</p>
-                        <p>Class XI</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide className='flex flex-col items-center justify-center px-10'>
-                    <img src={Inverted} alt="" />
-                    <p className='lg:text-2xl text-textSecondary font-semibold mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pulvinar eleifend vel nisi tempus tristique lorem lacus, feugiat. Neque aenean sed mattis </p>
-                    <img src={Testimonial2} alt="Profile" className='mt-10' />
-                    <div className='mt-5 text-xs lg:text-xl'>
-                        <p>Randy Rhiel Madsen</p>
-                        <p>Class XII</p>
-                    </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
             </Swiper>
         </div>
     )
