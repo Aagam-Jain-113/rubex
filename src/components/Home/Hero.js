@@ -4,10 +4,10 @@ import heroanim from '../../assets/heroanimation.gif'
 
 function Hero() {
     return (
-        <div className='text-center lg:text-left min-h-screen px-6 w-screen text-white flex-col-reverse flex lg:flex-row lg:space-x-12 items-center justify-center'>
-            <div className='w-full px-10 lg:w-7/12'>
-                <p className='uppercase text-xl lg:text-4xl font-bold'>On-demand live class</p>
-                <p className='mt-2 lg:mt-6 lg:text-base text-xs'>Personalised live learning platform for 6th to 12th graders</p>
+        <div className='text-center lg:text-left min-h-screen px-6 lg:space-x-0 w-screen text-white flex-col-reverse flex lg:flex-row items-center justify-center'>
+            <div className='w-full lg:px-6 lg:w-3/4'>
+                <p className='uppercase text-xl lg:text-40 leading-10 font-bold'>On-demand live class</p>
+                <p className='mt-0 lg:mt-6 lg:text-base text-xs'>Personalised live learning platform for 6th to 12th graders</p>
                 <button className='uppercase lg:text-xl text-xs mt-6 lg:mt-10 bg-buttonBg rounded-xl h-10 lg:h-16 w-48 lg:w-72 px-4 text-center font-bold'>Join Your Class Now </button>
             </div>
             <div className='flex mt-12 lg:mt-0 flex-col relative items-center'>

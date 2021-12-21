@@ -8,9 +8,9 @@ function Mobile() {
     return (
         <div className='bg-homeBg px-10 pt-10 lg:px-40 min-h-screen flex flex-col justify-center'>
             <div className='grid grid-cols-2 items-center'>
-                <div className='col-span-2 lg:col-span-1'>
-                    <p className='text-textPrimary uppercase font-bold text-lg lg:text-3xl'>Anytime,<br /> Anywhere Learning!</p>
-                    <p className='lg:w-7/12 w-full mt-4 lg:mt-10'>Take class on the go with RUBEX Mobile App. Download the App and learn from your most comfortable place!</p>
+                <div className='col-span-2 text-center lg:text-left lg:col-span-1'>
+                    <p className='text-textPrimary uppercase font-bold text-xl lg:text-3xl'>Anytime,<br /> Anywhere Learning!</p>
+                    <p className='lg:w-9/12 text-xs lg:text-xl w-full mt-4 lg:mt-10'>Take class on the go with RUBEX Mobile App. Download the App and learn from your most comfortable place!</p>
                     <img src={GooglePlay} alt="Google Play download" className='mt-6 lg:mt-10 mx-auto w-56 lg:mx-0' />
                     <div className='relative mt-10'>
                         <img src={Appstore} alt="Google Play download" className='w-56 mx-auto lg:mx-0' />

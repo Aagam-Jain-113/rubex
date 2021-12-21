@@ -40,7 +40,10 @@ function Footer() {
                 </div>
             </div>
             <div className='bg-social py-4 lg:pl-12 lg:h-20 lg:pr-28 flex lg:flex-row flex-col-reverse justify-between'>
-                <img src={Logo} alt="Logo" className='w-10 h-10 mt-6 lg:mt-4 mx-auto lg:mx-0' />
+                <div className='flex flex-col lg:flex-row lg:space-x-6'>
+                    <img src={Logo} alt="Logo" className='w-10 h-10 mt-6 lg:mt-4 mx-auto lg:mx-0' />
+                    <p className='text-white text-center lg:text-left text-sm lg:mt-4'>Copyright © 2021, Widget EduTech Private Limited</p>
+                </div>
                 <div className='flex justify-around items-center text-lg space-x-0 lg:space-x-10 text-white'>
                     <FaLinkedinIn />
                     <FaFacebookF />
