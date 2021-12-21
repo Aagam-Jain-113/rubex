@@ -11,7 +11,7 @@ function Hero() {
                 <button className='uppercase lg:text-xl text-xs mt-6 lg:mt-10 bg-buttonBg rounded-xl h-10 lg:h-16 w-48 lg:w-72 px-4 text-center font-bold'>Join Your Class Now </button>
             </div>
             <div className='flex mt-12 lg:mt-0 flex-col relative items-center'>
-                <img src={heroanim} alt="" className='absolute w-1/2 md:w-52 md:left-52 md:-top-12 lg:w-64 -top-32 lg:left-32 lg:-top-32 left-16' />
+                <img src={heroanim} alt="" className='absolute drop-shadow-animation shadow-animation w-1/2 md:w-52 md:left-52 md:-top-12 lg:w-64 -top-32 lg:left-36 lg:-top-32 left-16' />
                 <img src={heroimg} alt="Hero" />
             </div>
         </div>

@@ -2,65 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   box-sizing: border-box;
 }
 
-.hero{
-  background: url('../src/assets/herobg.png') center center;
+.hero {
+  background: url("../src/assets/herobg.png") center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.mySwiper{
+.mySwiper {
   height: 520px;
 }
 
-.mySwiper .swiper-slide{
-  background: rgba(255,255,255,0.6);
+.mySwiper .swiper-slide {
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   height: 420px;
   margin: 40px 0;
 }
 
-.swiper-pagination-bullets{
-  bottom : 0px !important;
+.swiper-pagination-bullets {
+  bottom: 0px !important;
 }
 
-.slider-single-content{
+.slider-single-content {
   border-radius: 20px;
 }
 
-.mySwiper .swiper-slide-active{
+.mySwiper .swiper-slide-active {
   background: #fff;
   box-shadow: 0px 4px 60px 3px rgba(0, 0, 0, 0.2);
   z-index: 99;
   margin-right: -10%;
 }
 
-.swiper-slide-thumb-active{
+.swiper-slide-thumb-active {
   display: none;
 }
 
-.swiper-slide-visible{
+.swiper-slide-visible {
   animation: animate 400ms ease-in;
 }
-.thumbs .swiper-wrapper{
+.thumbs .swiper-wrapper {
   display: block !important;
   height: 150px !important;
 }
 
 @keyframes animate {
-  from{
+  from {
     transform: scale(0);
   }
-  to{
+  to {
     transform: scale(100%);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .mySwiper .swiper-slide{
+    width: 90% !important;
+  }
+  .swiper-wrapper {
+    padding: 20px;
   }
 }
