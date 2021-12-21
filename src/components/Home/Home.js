@@ -72,7 +72,7 @@ function Home() {
             <div className='bg-homeBg px-10 flex relative flex-col justify-center lg:min-h-screen'>
                 <img src={Pattern1} alt="" className='absolute w-7/12 right-0 top-0' />
                 <div className='grid items-center mt-10 lg:mt-0 grid-cols-2 gap-6'>
-                    <div className='col-span-2 lg:col-span-1 text-center lg:text-left lg:pl-28 lg:pr-16'>
+                    <div className='col-span-2 lg:col-span-1 text-center lg:text-left lg:pl-28 lg:pr-20'>
                         <p className='text-textPrimary font-bold text-lg lg:text-4xl'>Personal tutor for every child</p>
                         <p className='text-textSecondary mt-2 lg:mt-6 text-xs lg:text-xl'>Our algorithm understands your child, using AI assisted matchmaking every student is matched with a tutor who is able to convey topics in the way the student best perceives it.</p>
                     </div>
@@ -97,7 +97,7 @@ function Home() {
             <div className='bg-homeBg py-10 px-6 lg:px-10 flex relative overflow-hidden flex-col justify-center pt-10 lg:pt-0 lg:min-h-screen'>
                 <div className='grid mx-auto items-center grid-cols-2'>
                     <img src={Mask2} alt="" className='absolute lg:w-1/2 left-0 top-10' />
-                    <div className='col-span-2 lg:col-span-1 text-center lg:text-left px-6 lg:px-20'>
+                    <div className='col-span-2 lg:col-span-1 text-center lg:text-left px-6 lg:px-24'>
                         <p className='text-textPrimary font-bold text-lg lg:text-4xl'>Why you should learn from RUBEX ?</p>
                         <p className='text-textSecondary mt-3 lg:mt-6 text-sm lg:text-xl'>Our flexible approach to learning allows students to learn at their pace and clear doubts whenever they arise.
                             <br /><br />

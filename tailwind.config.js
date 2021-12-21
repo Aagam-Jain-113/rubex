@@ -41,9 +41,6 @@ module.exports = {
       borderRadius: {
         "2xl": "20px",
         "xl": "10px"
-      },
-      fontSize:{
-        "40" : "40px"
       }
     },
   },

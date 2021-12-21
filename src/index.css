@@ -26,7 +26,11 @@
   background: rgba(255,255,255,0.6);
   border-radius: 20px;
   height: 420px;
-  margin: 30px 0;
+  margin: 18px 0;
+}
+
+.swiper-pagination-bullets{
+  bottom : 0px !important;
 }
 
 .slider-single-content{
