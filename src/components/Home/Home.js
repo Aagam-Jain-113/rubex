@@ -85,7 +85,7 @@ function Home() {
             <div className='bg-homeBg lg:px-10 pt-10 lg:pt-0 flex relative flex-col justify-center lg:min-h-screen'>
                 <div className='flex flex-col-reverse text-center lg:text-inherit lg:grid items-center grid-cols-2 gap-12'>
                     <div className='col-span-2 lg:col-span-1 w-10/12 mx-auto'>
-                        <Carousel slides={slides} arrows={false} />
+                        <Carousel slides={slides} arrows={false} autoplay={true} interval={2500}  />
                     </div>
                     <div className='col-span-2 lg:col-span-1 lg:text-left px-10 lg:pr-28'>
                         <p className='text-textPrimary font-bold text-lg lg:text-4xl'>Holistic learning experience</p>

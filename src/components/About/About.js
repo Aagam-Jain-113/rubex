@@ -102,7 +102,7 @@ function About() {
 
             <div className='my-10 lg:my-24 px-10 text-center'>
                 <p className='text-primary font-bold text-lg lg:text-4xl'>Dissecting RUBEX</p>
-                <p className='w-full lg:w-450 mt-2 lg:mt-6 mx-auto text-xs lg:text-xl text-textSecondary'>The driving force behind creating Rubexclasses was to serve as a Reliable educator which is Universal, i.e. made for all, Blending modern technology with traditional pedagogy, to give you the best Educational Experience. And this is why we named it RUBEX.</p>
+                <p className='w-full lg:w-450 mt-2 lg:mt-6 mx-auto text-xs lg:text-xl text-textSecondary'>The driving force behind creating RUBEX was to serve as a Reliable educator which is Universal, i.e. made for all, Blending modern technology with traditional pedagogy, to give you the best Educational Experience. And this is why we named it RUBEX.</p>
             </div>
             <Testimonials />
             <Experience />
