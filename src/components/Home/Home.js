@@ -14,34 +14,15 @@ import Liveclass from '../../assets/liveclass.png'
 import Doubts from '../../assets/doubts.png'
 import Practice from '../../assets/practice.png'
 import Test from '../../assets/test.png'
-// import Ability from '../../assets/ability.png'
-// import Personality from '../../assets/personality.png'
-// import Learningstyle from '../../assets/learningstyle.png'
-// import AbilityPrev from '../../assets/abilitypreview.png'
-// import PersonalityPrev from '../../assets/personalitypreview.png'
-// import LearningstylePrev from '../../assets/learningstylepreview.png'
-import Cycle from '../../assets/cycle1.gif'
+import Cycle from '../../assets/cycle.gif'
 
 import { Carousel } from '3d-react-carousal'
 
-// import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/free-mode"
-import "swiper/css/thumbs"
-
-import SwiperCore, {
-    Autoplay, FreeMode, Thumbs, Pagination
-} from 'swiper';
 import Plan from './Plan'
 import Navbar from '../Navbar'
 
-SwiperCore.use([FreeMode, Thumbs, Autoplay, Pagination]);
-
 
 function Home() {
-
-    // const [thumbsSwiper, setThumbsSwiper] = React.useState(null);
 
     const Card = ({ title, image, content, tag }) => {
         return (
@@ -56,9 +37,9 @@ function Home() {
 
     const slides = [
         <Card title="Doubts" image={Doubts} content="Lots of doubts? we're here 24/7 to solve them." tag="Ask Doubt" />,
-        <Card title="Take Test" image={Test} content="Lots of doubts? we're here 24/7 to solve them." tag="Take Test" />,
-        <Card title="Live Classes" image={Liveclass} content="Lots of doubts? we're here 24/7 to solve them." tag="Join Class" />,
-        <Card title="Practice Questions" image={Practice} content="Lots of doubts? we're here 24/7 to solve them." tag="Start Practice" />
+        <Card title="Take Test" image={Test} content="Analyse your takeaway of every topic by taking tests on your own" tag="Take Test" />,
+        <Card title="Live Classes" image={Liveclass} content="Schedule a class with a top educator for a topic of your choosing" tag="Join Class" />,
+        <Card title="Practice Questions" image={Practice} content="Put your leaning into practice with our practice questions" tag="Start Practice" />
     ]
 
     return (
@@ -85,7 +66,7 @@ function Home() {
             <div className='bg-homeBg lg:px-10 pt-10 lg:pt-0 flex relative flex-col justify-center lg:min-h-screen'>
                 <div className='flex flex-col-reverse text-center lg:text-inherit lg:grid items-center grid-cols-2 gap-12'>
                     <div className='col-span-2 lg:col-span-1 w-10/12 mx-auto'>
-                        <Carousel slides={slides} arrows={false} autoplay={true} interval={2500}  />
+                        <Carousel slides={slides} arrows={true}  />
                     </div>
                     <div className='col-span-2 lg:col-span-1 lg:text-left px-10 lg:pr-28'>
                         <p className='text-textPrimary font-bold text-lg lg:text-4xl'>Holistic learning experience</p>
