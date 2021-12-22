@@ -65,6 +65,23 @@
   }
 }
 
+.slider-right div, .slider-left div{
+  border: none !important;
+  font-size: 24px;
+}
+
+.slider-right div{
+  left: 200% !important;
+}
+
+.slider-left div{
+  left: -200% !important;
+}
+
+.slider-right i, .slider-left i{
+  color: #3d7af5;
+}
+
 @media screen and (max-width: 769px) {
   .mySwiper .swiper-slide{
     width: 90% !important;
