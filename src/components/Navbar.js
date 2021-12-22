@@ -33,7 +33,7 @@ function Navbar() {
                             <NavLink to="/contact" className='cursor-pointer'>Contact Us</NavLink>
                         </div>
                     }
-                    <div className='opacity-0'>
+                    <div className='hidden'>
                         <a href="/">Login</a>
                         <button href="/" className='border font-bold border-white w-32 rounded-xl h-10'>Sign Up</button>
                     </div>
@@ -52,7 +52,7 @@ function Navbar() {
                             <NavLink to="/contact" className='cursor-pointer'>Contact Us</NavLink>
                         </div>
                     }
-                    <div className='opacity-0'>
+                    <div className='hidden'>
                         <a href="/">Login</a>
                         <button href="/" className='border font-bold border-white w-32 rounded-xl h-10'>Sign Up</button>
                     </div>

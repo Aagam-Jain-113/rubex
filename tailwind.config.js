@@ -47,7 +47,7 @@ module.exports = {
         "xl": "10px"
       },
       fontSize: {
-        "42" : "42px"
+        "40" : "40px"
       }
     },
   },
