@@ -47,7 +47,10 @@ module.exports = {
         "xl": "10px"
       },
       fontSize: {
-        "40" : "40px"
+        "40" : "38px"
+      },
+      inset: {
+        132 : "132px" 
       }
     },
   },
